@@ -1,0 +1,1 @@
+E:\Projects\Winform\Tetris\Tetris\bin\Release\Tetris.exe.config
