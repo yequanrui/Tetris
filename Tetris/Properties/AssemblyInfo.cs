@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Designed by FY")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FY")]
-[assembly: AssemblyProduct("Tetris made by VS2010(C#)")]
-[assembly: AssemblyCopyright("版权所有 (C) FY 2011")]
+[assembly: AssemblyProduct("Tetris made by VS2015(C#)")]
+[assembly: AssemblyCopyright("Copyright © 2011-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -74,7 +74,7 @@
             this.lbl_tool.Name = "lbl_tool";
             this.lbl_tool.Size = new System.Drawing.Size(156, 17);
             this.lbl_tool.TabIndex = 3;
-            this.lbl_tool.Text = "编程工具：VS2010（C＃）";
+            this.lbl_tool.Text = "编程工具：VS2015（C＃）";
             // 
             // btn_close
             // 
