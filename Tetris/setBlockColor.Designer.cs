@@ -1,6 +1,6 @@
 ﻿namespace Tetris
 {
-    partial class setBlockColor
+    partial class SetBlockColor
     {
         /// <summary>
         /// Required designer variable.

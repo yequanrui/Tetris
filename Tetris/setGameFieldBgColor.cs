@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Tetris
 {
-    public partial class setGameFieldBgColor : Form
+    public partial class SetGameFieldBgColor : Form
     {
-        public setGameFieldBgColor()
+        public SetGameFieldBgColor()
         {
             InitializeComponent();
         }

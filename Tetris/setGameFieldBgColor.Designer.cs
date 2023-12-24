@@ -1,6 +1,6 @@
 ﻿namespace Tetris
 {
-    partial class setGameFieldBgColor
+    partial class SetGameFieldBgColor
     {
         /// <summary>
         /// Required designer variable.

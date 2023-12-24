@@ -1,6 +1,6 @@
 ﻿namespace Tetris
 {
-    partial class about
+    partial class About
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_time = new System.Windows.Forms.Label();
             this.lbl_tool = new System.Windows.Forms.Label();
-            this.btn_close = new System.Windows.Forms.Button();
+            this.CancelBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_author
@@ -74,22 +74,22 @@
             this.lbl_tool.Name = "lbl_tool";
             this.lbl_tool.Size = new System.Drawing.Size(156, 17);
             this.lbl_tool.TabIndex = 3;
-            this.lbl_tool.Text = "编程工具：VS2015（C＃）";
+            this.lbl_tool.Text = "编程工具：VS2022（C＃）";
             // 
-            // btn_close
+            // CancelBtn
             // 
-            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_close.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_close.Location = new System.Drawing.Point(59, 114);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(75, 23);
-            this.btn_close.TabIndex = 4;
-            this.btn_close.Text = "关 闭";
-            this.btn_close.UseVisualStyleBackColor = false;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            this.CancelBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CancelBtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CancelBtn.Location = new System.Drawing.Point(59, 114);
+            this.CancelBtn.Name = "CancelBtn";
+            this.CancelBtn.Size = new System.Drawing.Size(75, 23);
+            this.CancelBtn.TabIndex = 4;
+            this.CancelBtn.Text = "关 闭";
+            this.CancelBtn.UseVisualStyleBackColor = false;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
-            // about
+            // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -97,7 +97,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(200, 150);
             this.ControlBox = false;
-            this.Controls.Add(this.btn_close);
+            this.Controls.Add(this.CancelBtn);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.lbl_tool);
             this.Controls.Add(this.lbl_time);
@@ -107,7 +107,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "about";
+            this.Name = "About";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "关于";
@@ -123,6 +123,6 @@
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Label lbl_time;
         private System.Windows.Forms.Label lbl_tool;
-        private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.Button CancelBtn;
     }
 }

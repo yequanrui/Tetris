@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Tetris
 {
@@ -18,11 +14,11 @@ namespace Tetris
         private bool stillRuning = false; //游戏运行开关
         private enum speeds
         {
-            slower=1000,
-            slow=800,
-            quick=500,
-            quicker=350,
-            quickest=250
+            slower = 1000,
+            slow = 800,
+            quick = 500,
+            quicker = 350,
+            quickest = 250
         };
         //游戏速度，数字越小越快
         public MainForm()
@@ -44,9 +40,9 @@ namespace Tetris
                 return;
             FileStream fs = new FileStream("Setting.ini", FileMode.OpenOrCreate, FileAccess.ReadWrite);
             StreamReader sr = new StreamReader(fs);
-            string line1=sr.ReadLine();
-            string line2=sr.ReadLine();
-            string line3=sr.ReadLine();
+            string line1 = sr.ReadLine();
+            string line2 = sr.ReadLine();
+            string line3 = sr.ReadLine();
             if (line1 != null && line1.Split('=').Length > 1)
             {
                 GameField.BackColor = Color.FromArgb(int.Parse(line1.Split('=')[1]));
@@ -64,7 +60,7 @@ namespace Tetris
         {
             FileStream fs = new FileStream("Setting.ini", FileMode.Create, FileAccess.ReadWrite);
             StreamWriter sw = new StreamWriter(fs);
-            sw.WriteLine("GameFieldColor="+GameField.BackColor.ToArgb());
+            sw.WriteLine("GameFieldColor=" + GameField.BackColor.ToArgb());
             sw.WriteLine("BlockFroeColor=" + colorToStr(GameField.BlockForeColor));
             sw.WriteLine("BlockBackColor=" + colorToStr(GameField.BlockBackColor));
             sw.Flush();
@@ -75,9 +71,9 @@ namespace Tetris
         private Color[] strToColor(string str)
         {
             string[] strs = str.Split(',');
-            if ((strs.Length-1) != 7)
+            if ((strs.Length - 1) != 7)
                 return null;
-            Color[] colors=new Color[7];
+            Color[] colors = new Color[7];
             for (int i = 0; i < strs.Length - 1; i++)
                 colors[i] = Color.FromArgb(int.Parse(strs[i]));
             return colors;
@@ -147,7 +143,7 @@ namespace Tetris
             }
             currentBlock.down();
         }
-         /*窗口重绘*/
+        /*窗口重绘*/
         private void Form1_Activated(object sender, EventArgs e)
         {
             picBackGround.Invalidate();
@@ -157,10 +153,10 @@ namespace Tetris
         /*关闭窗体时，提示是否保存设置*/
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (GameField.isChanged&&MessageBox.Show("设置已更改，是否在退出前保存？","提示",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (GameField.isChanged && MessageBox.Show("设置已更改，是否在退出前保存？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 saveSettings();
         }
-#region 菜单……
+        #region 菜单……
         /*开始游戏*/
         private void 开始ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -247,26 +243,26 @@ namespace Tetris
         /*操作说明*/
         private void 操作说明ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            help helps = new help();
+            Help helps = new Help();
             helps.Show();
         }
         /*关于*/
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            about ab = new about();
+            About ab = new About();
             ab.Show();
         }
         /*背景颜色设置*/
         private void 背景颜色设置ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            setGameFieldBgColor sb = new setGameFieldBgColor();
+            SetGameFieldBgColor sb = new SetGameFieldBgColor();
             sb.ShowDialog();
             picBackGround.BackColor = GameField.BackColor;
         }
         /*方块颜色设置*/
         private void 方块颜色设置ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            setBlockColor sb = new setBlockColor();
+            SetBlockColor sb = new SetBlockColor();
             sb.ShowDialog();
         }
         /*速度选择较慢*/
@@ -318,6 +314,6 @@ namespace Tetris
             saveSettings();
             GameField.isChanged = false;
         }
-#endregion
+        #endregion
     }
 }
