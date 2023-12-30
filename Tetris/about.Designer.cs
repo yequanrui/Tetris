@@ -39,7 +39,7 @@
             // 
             this.lbl_author.AutoSize = true;
             this.lbl_author.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl_author.Location = new System.Drawing.Point(22, 42);
+            this.lbl_author.Location = new System.Drawing.Point(17, 42);
             this.lbl_author.Name = "lbl_author";
             this.lbl_author.Size = new System.Drawing.Size(68, 17);
             this.lbl_author.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             this.lbl_time.AutoSize = true;
             this.lbl_time.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl_time.Location = new System.Drawing.Point(22, 66);
+            this.lbl_time.Location = new System.Drawing.Point(17, 66);
             this.lbl_time.Name = "lbl_time";
             this.lbl_time.Size = new System.Drawing.Size(146, 17);
             this.lbl_time.TabIndex = 2;
@@ -70,18 +70,18 @@
             // 
             this.lbl_tool.AutoSize = true;
             this.lbl_tool.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl_tool.Location = new System.Drawing.Point(22, 90);
+            this.lbl_tool.Location = new System.Drawing.Point(17, 90);
             this.lbl_tool.Name = "lbl_tool";
-            this.lbl_tool.Size = new System.Drawing.Size(156, 17);
+            this.lbl_tool.Size = new System.Drawing.Size(190, 17);
             this.lbl_tool.TabIndex = 3;
-            this.lbl_tool.Text = "编程工具：VS2022（C＃）";
+            this.lbl_tool.Text = "编程工具：VisualStudio（C＃）";
             // 
             // CancelBtn
             // 
             this.CancelBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CancelBtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.CancelBtn.Location = new System.Drawing.Point(59, 114);
+            this.CancelBtn.Location = new System.Drawing.Point(62, 114);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(75, 23);
             this.CancelBtn.TabIndex = 4;
@@ -95,7 +95,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(200, 150);
+            this.ClientSize = new System.Drawing.Size(210, 150);
             this.ControlBox = false;
             this.Controls.Add(this.CancelBtn);
             this.Controls.Add(this.lbl_name);
